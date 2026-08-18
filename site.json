@@ -1,0 +1,10 @@
+{
+  "description": "This web application allows users to visualize character progression through level-up animations, showcasing transformations from level 1 to 5.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

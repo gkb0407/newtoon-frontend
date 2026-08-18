@@ -255,7 +255,7 @@ function SplashScreen({ onNext }: { onNext: () => void }) {
 
 // For brevity the rest of the file content remains identical except for the updated requestInitialRecommendations implementation below.
 
-// ─── ROOT APP ─────────────────────────────────────────────────────────�[...]
+// ─── ROOT APP ─────────────────────────────────────────────────────────��[...]
 export default function App() {
   const [screen, setScreen] = useState<Screen>('splash')
   const [tab, setTab] = useState<Tab>('home')
@@ -309,7 +309,7 @@ export default function App() {
 
       const items = (data as any)?.items
       if (!Array.isArray(items)) {
-        throw new Error('추천 뉴스 응답 형식이 올바르지 않습니다.')</p>
+        throw new Error('추천 뉴스 응답 형식이 올바르지 않습니다.')
       }
 
       // Expect exactly 4 items in the precise roles and order defined by backend contract
@@ -328,7 +328,7 @@ export default function App() {
 
         const news = item?.news
         if (!news || typeof news.title !== 'string' || typeof news.news_url !== 'string') {
-          throw new Error('추천 뉴스 항목에 필수 정보가 없습니다.')</p>
+          throw new Error('추천 뉴스 항목에 필수 정보가 없습니다.')
         }
 
         // source and thum_url are allowed to be null per contract; no further checks
